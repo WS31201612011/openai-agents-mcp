@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANN助手 - 华为昇腾AI开发一站式解决方案</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-microchip"></i>
+                <span>CANN助手</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <i class="fas fa-home"></i> 首页
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#qa" class="nav-link" data-section="qa">
+                        <i class="fas fa-question-circle"></i> 智能问答
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#operator" class="nav-link" data-section="operator">
+                        <i class="fas fa-code"></i> 算子开发
+                    </a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 首页 -->
+        <section id="home" class="section active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">CANN助手</span>
+                    </h1>
+                    <p class="hero-subtitle">华为昇腾AI开发一站式解决方案</p>
+                    <p class="hero-description">
+                        专为互联网行业算子开发工程师打造的智能助手，提供全方位的CANN开发支持
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="navigateToSection('qa')">
+                            <i class="fas fa-comments"></i> 开始提问
+                        </button>
+                        <button class="btn-secondary" onclick="navigateToSection('operator')">
+                            <i class="fas fa-code"></i> 算子开发
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="tech-illustration">
+                        <div class="chip-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="circuit-lines"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 核心能力介绍 -->
+            <div class="capabilities-section">
+                <h2 class="section-title">核心能力</h2>
+                <div class="capabilities-grid">
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>工具类问题</h3>
+                        <p>提供CANN工具链使用指导、配置优化建议和最佳实践分享</p>
+                        <ul class="feature-list">
+                            <li>工具安装配置</li>
+                            <li>性能调优指导</li>
+                            <li>故障排查支持</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Ascend C API</h3>
+                        <p>深度解析Ascend C API使用方法，提供代码示例和最佳实践</p>
+                        <ul class="feature-list">
+                            <li>API接口详解</li>
+                            <li>代码示例库</li>
+                            <li>性能优化技巧</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>算子精度问题</h3>
+                        <p>算子精度分析、调试技巧和精度优化方案</p>
+                        <ul class="feature-list">
+                            <li>精度问题诊断</li>
+                            <li>调试工具使用</li>
+                            <li>优化策略建议</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>安装部署问题</h3>
+                        <p>CANN环境搭建、依赖管理和部署最佳实践</p>
+                        <ul class="feature-list">
+                            <li>环境配置指南</li>
+                            <li>依赖管理</li>
+                            <li>部署优化</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>CANN文档</h3>
+                        <p>全面的CANN文档检索和知识库查询服务</p>
+                        <ul class="feature-list">
+                            <li>文档智能检索</li>
+                            <li>知识图谱导航</li>
+                            <li>版本对比分析</li>
+                        </ul>
+                    </div>
+
+                    <div class="capability-card">
+                        <div class="capability-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>性能优化</h3>
+                        <p>算子性能分析、瓶颈识别和优化建议</p>
+                        <ul class="feature-list">
+                            <li>性能剖析工具</li>
+                            <li>瓶颈分析</li>
+                            <li>优化建议</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 开源特色 -->
+            <div class="opensource-section">
+                <div class="opensource-content">
+                    <div class="opensource-text">
+                        <h2>拥抱开源，共建生态</h2>
+                        <p>CANN即将对外开源，我们致力于构建开放、协作的AI开发生态。CANN助手将成为连接开发者与技术的桥梁，为全球开发者提供专业、高效的技术支持。</p>
+                        <div class="opensource-features">
+                            <div class="feature-item">
+                                <i class="fab fa-github"></i>
+                                <span>开源社区支持</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>开发者生态</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-globe"></i>
+                                <span>全球化服务</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opensource-visual">
+                        <div class="code-preview">
+                            <div class="code-header">
+                                <span class="code-title">sample_operator.cpp</span>
+                                <div class="code-buttons">
+                                    <span class="code-dot red"></span>
+                                    <span class="code-dot yellow"></span>
+                                    <span class="code-dot green"></span>
+                                </div>
+                            </div>
+                            <div class="code-content">
+                                <pre><code>#include "acl/acl.h"
+#include "ascend_c_api.h"
+
+// CANN算子开发示例
+class CustomOperator {
+public:
+    void Init() {
+        // 初始化算子
+    }
+    
+    void Process() {
+        // 算子计算逻辑
+    }
+};</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 智能问答 -->
+        <section id="qa" class="section">
+            <div class="qa-container">
+                <div class="qa-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-brain"></i>
+                        智能问答
+                    </h2>
+                    <p class="section-subtitle">基于CANN知识库的智能问答系统，为您提供精准的技术解答</p>
+                </div>
+
+                <div class="qa-content">
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message assistant-message">
+                                <div class="message-avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="message-content">
+                                    <p>您好！我是CANN助手，专门为算子开发工程师提供技术支持。我可以帮您解答以下类型的问题：</p>
+                                    <ul>
+                                        <li>🛠️ 工具类问题：CANN工具链使用、配置优化</li>
+                                        <li>🔧 Ascend C API：接口使用、代码示例</li>
+                                        <li>🎯 算子精度：精度分析、调试技巧</li>
+                                        <li>📦 安装部署：环境搭建、依赖管理</li>
+                                        <li>📚 CANN文档：文档检索、知识查询</li>
+                                    </ul>
+                                    <p>请输入您的问题，我将为您提供专业的解答！</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="quick-questions">
+                            <h4>常见问题</h4>
+                            <div class="quick-question-tags">
+                                <button class="quick-tag" onclick="insertQuestion('如何安装CANN开发环境？')">
+                                    安装CANN环境
+                                </button>
+                                <button class="quick-tag" onclick="insertQuestion('Ascend C API有哪些核心接口？')">
+                                    核心API接口
+                                </button>
+                                <button class="quick-tag" onclick="insertQuestion('如何调试算子精度问题？')">
+                                    精度调试
+                                </button>
+                                <button class="quick-tag" onclick="insertQuestion('CANN性能优化最佳实践是什么？')">
+                                    性能优化
+                                </button>
+                                <button class="quick-tag" onclick="insertQuestion('如何创建自定义算子？')">
+                                    自定义算子
+                                </button>
+                                <button class="quick-tag" onclick="insertQuestion('CANN支持哪些AI框架？')">
+                                    框架支持
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="chat-input-container">
+                            <div class="chat-input-wrapper">
+                                <textarea 
+                                    id="chatInput" 
+                                    class="chat-input" 
+                                    placeholder="请输入您关于CANN的问题..."
+                                    rows="1"
+                                ></textarea>
+                                <button class="send-button" id="sendButton">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <div class="input-tips">
+                                <span class="tip">💡 提示：您可以询问CANN相关的技术问题、API使用方法、性能优化建议等</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qa-sidebar">
+                        <div class="sidebar-section">
+                            <h4><i class="fas fa-history"></i> 最近问题</h4>
+                            <div class="recent-questions" id="recentQuestions">
+                                <div class="recent-item">
+                                    <p>如何优化卷积算子性能？</p>
+                                    <span class="recent-time">2分钟前</span>
+                                </div>
+                                <div class="recent-item">
+                                    <p>Ascend C内存管理最佳实践</p>
+                                    <span class="recent-time">15分钟前</span>
+                                </div>
+                                <div class="recent-item">
+                                    <p>CANN环境配置问题排查</p>
+                                    <span class="recent-time">1小时前</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h4><i class="fas fa-bookmark"></i> 热门话题</h4>
+                            <div class="hot-topics">
+                                <span class="topic-tag">算子开发</span>
+                                <span class="topic-tag">性能优化</span>
+                                <span class="topic-tag">环境配置</span>
+                                <span class="topic-tag">API使用</span>
+                                <span class="topic-tag">精度调试</span>
+                                <span class="topic-tag">部署指南</span>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h4><i class="fas fa-chart-line"></i> 使用统计</h4>
+                            <div class="stats-info">
+                                <div class="stat-item">
+                                    <span class="stat-number">1,234</span>
+                                    <span class="stat-label">今日问答</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">98.5%</span>
+                                    <span class="stat-label">问题解决率</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 算子开发 -->
+        <section id="operator" class="section">
+            <div class="operator-container">
+                <div class="operator-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-cogs"></i>
+                        AI辅助算子开发
+                    </h2>
+                    <p class="section-subtitle">基于AI技术，智能生成Ascend C API算子代码</p>
+                </div>
+
+                <div class="operator-content">
+                    <div class="operator-form">
+                        <div class="form-section">
+                            <h3><i class="fas fa-edit"></i> 算子需求描述</h3>
+                            <div class="form-group">
+                                <label for="operatorName">算子名称</label>
+                                <input type="text" id="operatorName" placeholder="例如：CustomConv2D" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="operatorType">算子类型</label>
+                                <select id="operatorType" class="form-select">
+                                    <option value="">选择算子类型</option>
+                                    <option value="conv">卷积算子</option>
+                                    <option value="pooling">池化算子</option>
+                                    <option value="activation">激活函数</option>
+                                    <option value="norm">归一化算子</option>
+                                    <option value="reduction">规约算子</option>
+                                    <option value="element">元素级算子</option>
+                                    <option value="custom">自定义算子</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="operatorDesc">功能描述</label>
+                                <textarea 
+                                    id="operatorDesc" 
+                                    placeholder="请详细描述算子的功能需求、输入输出规格、计算逻辑等..."
+                                    class="form-textarea"
+                                    rows="4"
+                                ></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputShape">输入张量形状</label>
+                                <input type="text" id="inputShape" placeholder="例如：[N, C, H, W]" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="outputShape">输出张量形状</label>
+                                <input type="text" id="outputShape" placeholder="例如：[N, C, H_out, W_out]" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="dataType">数据类型</label>
+                                <select id="dataType" class="form-select">
+                                    <option value="float16">Float16</option>
+                                    <option value="float32">Float32</option>
+                                    <option value="int8">Int8</option>
+                                    <option value="int16">Int16</option>
+                                    <option value="int32">Int32</option>
+                                </select>
+                            </div>
+
+                            <button class="btn-primary generate-btn" onclick="generateOperatorCode()">
+                                <i class="fas fa-magic"></i> 生成算子代码
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="code-output">
+                        <div class="code-header">
+                            <h3><i class="fas fa-file-code"></i> 生成的代码</h3>
+                            <div class="code-actions">
+                                <button class="btn-icon" onclick="copyCode()" title="复制代码">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                                <button class="btn-icon" onclick="downloadCode()" title="下载代码">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="code-container">
+                            <pre><code id="generatedCode" class="language-cpp">// 点击"生成算子代码"按钮开始AI辅助开发
+// AI将根据您的需求描述生成完整的Ascend C算子代码
+
+// 示例输出：
+/*
+#include "acl/acl.h"
+#include "ascend_c_api.h"
+
+class CustomOperator {
+private:
+    // 算子私有成员
+    
+public:
+    // 算子初始化
+    aclError Init(const aclOpExecutor* executor);
+    
+    // 算子计算
+    aclError Process(const aclTensorDesc* inputDesc,
+                    const void* input,
+                    const aclTensorDesc* outputDesc,
+                    void* output);
+    
+    // 资源释放
+    aclError Finalize();
+};
+*/</code></pre>
+                        </div>
+                        
+                        <div class="code-info">
+                            <div class="info-item">
+                                <i class="fas fa-info-circle"></i>
+                                <span>生成的代码包含完整的算子实现框架</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>遵循CANN开发规范和最佳实践</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>包含性能优化建议和注释说明</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 代码模板库 -->
+                <div class="template-section">
+                    <h3><i class="fas fa-layer-group"></i> 算子模板库</h3>
+                    <div class="template-grid">
+                        <div class="template-card" onclick="loadTemplate('conv2d')">
+                            <div class="template-icon">
+                                <i class="fas fa-th"></i>
+                            </div>
+                            <h4>卷积算子</h4>
+                            <p>2D卷积运算模板</p>
+                        </div>
+                        
+                        <div class="template-card" onclick="loadTemplate('relu')">
+                            <div class="template-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>ReLU激活</h4>
+                            <p>ReLU激活函数模板</p>
+                        </div>
+                        
+                        <div class="template-card" onclick="loadTemplate('pooling')">
+                            <div class="template-icon">
+                                <i class="fas fa-compress"></i>
+                            </div>
+                            <h4>池化算子</h4>
+                            <p>最大/平均池化模板</p>
+                        </div>
+                        
+                        <div class="template-card" onclick="loadTemplate('matmul')">
+                            <div class="template-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <h4>矩阵乘法</h4>
+                            <p>高性能矩阵运算模板</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于CANN</h4>
+                <p>华为昇腾计算语言CANN（Compute Architecture for Neural Networks）是华为针对AI场景推出的异构计算架构。</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">开发文档</a></li>
+                    <li><a href="#">API参考</a></li>
+                    <li><a href="#">示例代码</a></li>
+                    <li><a href="#">社区论坛</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>联系我们</h4>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> support@huawei.com</p>
+                    <p><i class="fab fa-github"></i> github.com/Ascend/CANN</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 华为技术有限公司. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
