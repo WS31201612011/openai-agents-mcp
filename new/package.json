@@ -1,0 +1,41 @@
+{
+  "name": "cann-assistant",
+  "version": "1.0.0",
+  "description": "CANN助手 - 华为昇腾AI开发一站式解决方案",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8080",
+    "build": "echo 'No build process needed for static site'",
+    "lint": "echo 'Linting JavaScript files...'",
+    "format": "echo 'Formatting code...'"
+  },
+  "keywords": [
+    "CANN",
+    "华为昇腾",
+    "AI开发",
+    "算子开发",
+    "Ascend C",
+    "人工智能助手"
+  ],
+  "author": "CANN Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ascend/CANN-Assistant"
+  },
+  "bugs": {
+    "url": "https://github.com/Ascend/CANN-Assistant/issues"
+  },
+  "homepage": "https://github.com/Ascend/CANN-Assistant#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
